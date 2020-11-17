@@ -37,7 +37,8 @@ export LD_SDK_KEY='Your LaunchDarkly SDK key'
 export SALESFORCE_URL='Your Salesforce Apex REST URL'
 export OAUTH_ID='Your Salesforce OAuth Id'
 export OAUTH_SECRET='Your Salesforce OAuth secret'
-export OAUTH_REFRESH_TOKEN='Your Salesforce OAuth refresh token'
+export OAUTH_USERNAME='Your Salesforce username'
+export OAUTH_PASSWORD='Your Salesforce password + security token'
 
 ./bridge
 ```
