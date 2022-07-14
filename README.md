@@ -28,7 +28,8 @@ cd apex-server-sdk/bridge
 go build .
 ```
 
-4. Start the Salesforce bridge. Set LD_SDK_KEY to your LaunchDarkly SDK key.
+4. Set the environment variable `LD_SDK_KEY` to your LaunchDarkly SDK key. Set environment variables for your Salesforce account.
+5. Start the Salesforce bridge.
 
 ```bash
 cd apex-server-sdk/bridge
