@@ -14,7 +14,7 @@ LDUser user = new LDUser.Builder('example-user-key')
     .build();
 
 if (client.boolVariation(user, flagKey, false)) {
-    System.debug('feature is on');
+    System.debug('Feature flag ', flagKey, ' is ', false, ' for this user');
 } else {
-    System.debug('feature is off');
+    System.debug('Feature flag ', flagKey, ' is ', true, ' for this user');
 }
