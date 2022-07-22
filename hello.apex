@@ -13,6 +13,5 @@ LDUser user = new LDUser.Builder('example-user-key')
     .setName('Sandy')
     .build();
 
-if (client.boolVariation(user, flagKey, false)) {
+Boolean value = client.boolVariation(user, flagKey, false);
     System.debug('Feature flag '+flagKey+' is '+value+' for this user');
-}
