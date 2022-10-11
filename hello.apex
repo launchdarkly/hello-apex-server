@@ -1,4 +1,4 @@
-// You will set your LaunchDarkly SDK key during the bridge.
+// You will set your LaunchDarkly SDK key through the bridge application.
 
 // Set flagKey to the feature flag key you want to evaluate.
 String flagKey = 'my-boolean-flag';
