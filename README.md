@@ -29,7 +29,11 @@ go build .
 ```
 
 4. Set the environment variable `LD_SDK_KEY` to your LaunchDarkly SDK key. Set environment variables for your Salesforce account.
-5. Start the Salesforce bridge.
+  - Optional: If authenticating to your Salesforce sandbox, set 
+```bash
+export OAUTH_URI='https://test.salesforce.com/services/oauth2/token'
+```
+6. Start the Salesforce bridge.
 
 ```bash
 cd apex-server-sdk/bridge
