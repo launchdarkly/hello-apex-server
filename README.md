@@ -4,7 +4,7 @@ We've built a simple application that demonstrates how LaunchDarkly's SDK works.
 
 Below, you'll find the basic build procedure, but for more comprehensive instructions, you can visit the [Apex SDK reference guide](https://docs.launchdarkly.com/sdk/server-side/apex).
 
-This guide requires you to install the [Salesforce CLI](https://developer.salesforce.com/tools/sfdxcli) and the [Go compiler](https://golang.org/).
+This guide requires you to install the [Salesforce CLI](https://developer.salesforce.com/tools/salesforcecli) and the [Go compiler](https://golang.org/).
 
 ## Build instructions
 
@@ -18,7 +18,7 @@ git clone https://github.com/launchdarkly/apex-server-sdk.git
 
 ```bash
 cd apex-server-sdk
-sfdx force:source:deploy --targetusername='YOUR TARGET ORG' --sourcepath='force-app'
+sf project deploy start --target-org 'YOUR TARGET ORG' --source-dir 'force-app'
 ```
 
 3. Build the Salesforce LaunchDarkly bridge.
@@ -57,5 +57,5 @@ String flagKey = 'my-boolean-flag';
 6. Use the SDK with `hello.apex`
 
 ```bash
-sfdx force:apex:execute --targetusername='YOUR TARGET ORG' --apexcodefile='hello.apex'
+sf apex run --target-org 'YOUR TARGET ORG' --file 'hello.apex'
 ```
