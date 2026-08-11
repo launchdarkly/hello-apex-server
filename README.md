@@ -28,12 +28,12 @@ cd apex-server-sdk/bridge
 go build .
 ```
 
-4. Set the environment variable `LD_SDK_KEY` to your LaunchDarkly SDK key. Set environment variables for your Salesforce account.
+4. Set the environment variable `LD_SDK_KEY` to your LaunchDarkly SDK key. Set environment variables for your Salesforce account. See the [bridge configuration reference](https://github.com/launchdarkly/apex-server-sdk/blob/main/bridge/README.md) for all supported options, including JWT authentication.
   - Optional: If authenticating to your Salesforce sandbox, set 
 ```bash
 export OAUTH_URI='https://test.salesforce.com/services/oauth2/token'
 ```
-6. Start the Salesforce bridge.
+5. Start the Salesforce bridge.
 
 ```bash
 cd apex-server-sdk/bridge
@@ -48,13 +48,13 @@ export OAUTH_PASSWORD='Your Salesforce password + security token'
 ./bridge
 ```
 
-5. If there is an existing boolean feature flag in your LaunchDarkly project that you want to evaluate, edit `hello.apex` and set the value of `flagKey` to the flag key.
+6. If there is an existing boolean feature flag in your LaunchDarkly project that you want to evaluate, edit `hello.apex` and set the value of `flagKey` to the flag key.
 
 ```java
 String flagKey = 'my-boolean-flag';
 ```
 
-6. Use the SDK with `hello.apex`
+7. Use the SDK with `hello.apex`
 
 ```bash
 sf apex run --target-org 'YOUR TARGET ORG' --file 'hello.apex'
