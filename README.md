@@ -4,7 +4,7 @@ We've built a simple application that demonstrates how LaunchDarkly's SDK works.
 
 Below, you'll find the basic build procedure, but for more comprehensive instructions, you can visit the [Apex SDK reference guide](https://docs.launchdarkly.com/sdk/server-side/apex).
 
-This guide requires you to install the [Salesforce CLI](https://developer.salesforce.com/tools/salesforcecli) and the [Go compiler](https://golang.org/).
+This guide requires you to install the [Salesforce CLI](https://developer.salesforce.com/tools/salesforcecli) and the [Go compiler](https://golang.org/), version 1.26 or newer, which the bridge requires to build.
 
 ## Build instructions
 
